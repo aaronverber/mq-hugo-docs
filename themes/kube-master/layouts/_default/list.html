@@ -24,6 +24,9 @@
     {{ if eq $thisSection .Parent.Parent}}
     <div>
         <a href="{{.Permalink}}">{{.Parent.Title}} > {{.Title}}</a>
+        <div>
+            {{.Summary}}
+        </div>
     </div>
     {{ end }}
 {{ end }}
